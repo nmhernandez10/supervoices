@@ -1,0 +1,178 @@
+ILogin
+IRegistro
+IVer perfil
+IModificar perfil
+IVer salas
+ICrear sala
+IAgregar a playlist
+IBuscar
+ICrear playlist
+IAgregar amigo
+IHacer publicación
+IInicio (feed)
+IEnviar mensaje
+IComentar publicación
+IVer cola de sala
+IAgregar canción a cola de sala
+IEliminar canción a cola de sala
+IChat de sala
+PMariana.anaya@hotmail.com
+GLogearse
+I12
+I2
+I1
+GInicio
+I13
+I11
+I8
+I4
+I9
+I14
+I10
+I3
+GChats
+I5
+I15
+I18
+I6
+GPlaylist
+I7
+I17
+I16
+Pjp.campos@uniandes.edu.co
+GInicio
+I1
+I12
+I3
+I2
+I4
+GMusica
+I9
+I7
+I16
+I8
+I17
+GSala
+I5
+I6
+I15
+I18
+GSocial
+I11
+I14
+I13
+I10
+Psantibel8a@gmail.com
+GHome
+I4
+I12
+I3
+I13
+I10
+I14
+I9
+I11
+GLogin/registro
+I2
+I1
+GCanciones
+I17
+I7
+I5
+I18
+I15
+I8
+I16
+I6
+Psebastianbd95@gmail.com
+GSocial
+I3
+I14
+I11
+I1
+I4
+I2
+I10
+GSalas
+I5
+I15
+I16
+I18
+I17
+I6
+I13
+GCanciones
+I7
+I9
+I8
+GAlgo aparte
+I12
+Pjj.sarmiento11@uniandes.edu.co
+GInicio aplicacion
+I2
+I7
+I12
+I4
+I1
+I8
+GSocializacion
+I17
+I6
+I13
+I10
+I16
+I15
+I18
+I3
+I9
+GBusqueda
+I14
+I5
+I11
+Pdiegoal_2098@hotmail.com
+GInicio
+I6
+I5
+I14
+I9
+I12
+I11
+GRegistro/Login
+I2
+I1
+GExploración
+I8
+I7
+I10
+GSala
+I13
+I18
+I15
+I16
+I17
+GPerfil
+I3
+I4
+Paf.losada@uniandes.edu.co
+GVer Cosas
+I3
+I15
+I5
+I12
+I8
+GCrear Cosas
+I11
+I13
+I14
+I2
+I9
+I6
+GModificar Cosas
+I10
+I7
+I4
+I16
+I17
+GObjetos
+I1
+I18

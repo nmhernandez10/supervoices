@@ -1,0 +1,519 @@
+{
+    "tables": {
+        "Albums": {
+            "tableName": "Albums",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "album_name": {
+                    "field": "album_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "album_likes": {
+                    "field": "album_likes",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "album_releasedate": {
+                    "field": "album_releasedate",
+                    "seqType": "Sequelize.DATE"
+                },
+                "album_image": {
+                    "field": "album_image",
+                    "seqType": "Sequelize.STRING"
+                },
+                "album_identifier": {
+                    "unique": true,
+                    "field": "album_identifier",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "ArtistId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Artists",
+                        "key": "id"
+                    },
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE",
+                    "field": "ArtistId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Artists": {
+            "tableName": "Artists",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "artist_name": {
+                    "field": "artist_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "artist_genre": {
+                    "field": "artist_genre",
+                    "seqType": "Sequelize.STRING"
+                },
+                "artist_likes": {
+                    "field": "artist_likes",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "artist_image": {
+                    "field": "artist_image",
+                    "seqType": "Sequelize.STRING"
+                },
+                "artist_identifier": {
+                    "unique": true,
+                    "field": "artist_identifier",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "Chatrooms": {
+            "tableName": "Chatrooms",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "chatroom_name": {
+                    "field": "chatroom_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "UserId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Users",
+                        "key": "id"
+                    },
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE",
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Comments": {
+            "tableName": "Comments",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "comment_content": {
+                    "field": "comment_content",
+                    "seqType": "Sequelize.TEXT"
+                },
+                "comment_media": {
+                    "field": "comment_media",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "PostId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Posts",
+                        "key": "id"
+                    },
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE",
+                    "field": "PostId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "UserId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Users",
+                        "key": "id"
+                    },
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE",
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Messages": {
+            "tableName": "Messages",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "message_text": {
+                    "field": "message_text",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "ChatroomId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Chatrooms",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "ChatroomId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "UserId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Users",
+                        "key": "id"
+                    },
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE",
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Partners": {
+            "tableName": "Partners",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "UserFromId": {
+                    "name": "UserFromId",
+                    "allowNull": false,
+                    "references": {
+                        "model": "Users",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "field": "UserFromId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "UserToId": {
+                    "name": "UserToId",
+                    "allowNull": false,
+                    "references": {
+                        "model": "Users",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "field": "UserToId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Playlists": {
+            "tableName": "Playlists",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "playlist_name": {
+                    "field": "playlist_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "UserId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Users",
+                        "key": "id"
+                    },
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE",
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "PlaylistSongs": {
+            "tableName": "PlaylistSongs",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "PlaylistId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Playlists",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "PlaylistId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "SongId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Songs",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "field": "SongId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Posts": {
+            "tableName": "Posts",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "post_content": {
+                    "field": "post_content",
+                    "seqType": "Sequelize.TEXT"
+                },
+                "post_media": {
+                    "field": "post_media",
+                    "seqType": "Sequelize.STRING"
+                },
+                "post_likes": {
+                    "field": "post_likes",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "UserId": {
+                    "allowNull": false,
+                    "references": {
+                        "model": "Users",
+                        "key": "id"
+                    },
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE",
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Songs": {
+            "tableName": "Songs",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "song_name": {
+                    "field": "song_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "song_duration": {
+                    "field": "song_duration",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "song_likes": {
+                    "field": "song_likes",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "song_identifier": {
+                    "unique": true,
+                    "field": "song_identifier",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "AlbumId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Albums",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "AlbumId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Users": {
+            "tableName": "Users",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "user_names": {
+                    "field": "user_names",
+                    "seqType": "Sequelize.STRING"
+                },
+                "user_lastnames": {
+                    "field": "user_lastnames",
+                    "seqType": "Sequelize.STRING"
+                },
+                "user_email": {
+                    "unique": true,
+                    "field": "user_email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "user_password": {
+                    "field": "user_password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "user_image": {
+                    "field": "user_image",
+                    "seqType": "Sequelize.STRING"
+                },
+                "user_banner": {
+                    "field": "user_banner",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 1
+}

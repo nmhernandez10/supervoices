@@ -1,0 +1,19 @@
+"",Hacer publicación,Comentar publicación,Agregar amigo,Ver perfil,Modificar perfil,Registro,Login,Inicio (feed),Ver salas,Ver cola de sala,Chat de sala,Crear sala,Agregar canción a cola de sala,Eliminar canción a cola de sala,Agregar a playlist,Buscar,Crear playlist,Enviar mensaje
+Hacer publicación,"",100,57,42,42,28,14,28,28,0,0,28,0,0,0,14,57,57
+Comentar publicación,100,"",57,42,42,28,14,28,28,0,0,28,0,0,0,14,57,57
+Agregar amigo,57,57,"",57,57,14,14,14,0,14,14,14,28,28,28,28,42,57
+Ver perfil,42,42,57,"",71,28,28,42,14,28,14,14,14,14,0,28,42,42
+Modificar perfil,42,42,57,71,"",42,42,42,0,0,0,0,14,14,28,28,28,28
+Registro,28,28,14,28,42,"",85,42,0,0,0,14,0,0,14,14,14,14
+Login,14,14,14,28,42,85,"",42,0,0,14,0,0,0,14,14,0,0
+Inicio (feed),28,28,14,42,42,42,42,"",28,14,0,14,0,0,14,28,28,14
+Ver salas,28,28,0,14,0,0,0,28,"",71,57,71,28,28,14,28,14,14
+Ver cola de sala,0,0,14,28,0,0,0,14,71,"",85,71,57,57,14,28,14,42
+Chat de sala,0,0,14,14,0,0,14,0,57,85,"",71,57,57,14,14,14,42
+Crear sala,28,28,14,14,0,14,0,14,71,71,71,"",42,42,14,14,42,42
+Agregar canción a cola de sala,0,0,28,14,14,0,0,0,28,57,57,42,"",100,57,28,28,42
+Eliminar canción a cola de sala,0,0,28,14,14,0,0,0,28,57,57,42,100,"",57,28,28,42
+Agregar a playlist,0,0,28,0,28,14,14,14,14,14,14,14,57,57,"",71,28,0
+Buscar,14,14,28,28,28,14,14,28,28,28,14,14,28,28,71,"",42,14
+Crear playlist,57,57,42,42,28,14,0,28,14,14,14,42,28,28,28,42,"",57
+Enviar mensaje,57,57,57,42,28,14,0,14,14,42,42,42,42,42,0,14,57,""

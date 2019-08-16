@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "webproject_user",
+    "password": "webteam6",
+    "database": "webproject_db",
+    "host": "172.24.41.67",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "webproject_user",
+    "password": "webteam6",
+    "database": "webproject_db",
+    "host": "172.24.41.67",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "webproject_user",
+    "password": "webteam6",
+    "database": "webproject_db",
+    "host": "172.24.41.67",
+    "dialect": "postgres"
+  }
+}
