@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "webproject_user",
-    "password": "webteam6",
-    "database": "webproject_db",
-    "host": "172.24.41.67",
+    "username": "supervoices@supervoices-db",
+    "password": "db123456789.",
+    "database": "supervoices-db",
+    "host": "supervoices-db.postgres.database.azure.com",
     "dialect": "postgres"
   },
   "test": {
-    "username": "webproject_user",
-    "password": "webteam6",
-    "database": "webproject_db",
-    "host": "172.24.41.67",
+    "username": "supervoices@supervoices-db",
+    "password": "db123456789.",
+    "database": "supervoices-db",
+    "host": "supervoices-db.postgres.database.azure.com",
     "dialect": "postgres"
   },
   "production": {
-    "username": "webproject_user",
-    "password": "webteam6",
-    "database": "webproject_db",
-    "host": "172.24.41.67",
+    "username": "supervoices@supervoices-db",
+    "password": "db123456789.",
+    "database": "supervoices-db",
+    "host": "supervoices-db.postgres.database.azure.com",
     "dialect": "postgres"
   }
 }
